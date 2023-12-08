@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="t3">inscription</h1>
+    <form action="valide.html" method="post">
+        <fieldset><legend>donner de connectin</legend>
+         <label for="m" class="col">mail</label>   <input type="email" name="mail" id="m" placeholder="use@gmail.com" required   ><br>
+         <label for="o" class="col">mot de passe</label>   <input type="password" name="pw" id="o" required minlength="3">
+         <input type="button" value="voir mp">
+        </fieldset>
+        <fieldset><legend>donnes personnelles</legend>
+            <label for="p" class="col">prenom:</label>   <input class="ty" type="text" name="prenom" id="p"><br>
+            <label for="n" class="col">mon</label>   <input class="ty" type="text" name="nom" id="n"><br>
+            <label for="" class="col">titre:</label>  
+            <input type="radio" name="sexe" id="h" value="h">
+            <label for="h" >homme</label>  
+            <input type="radio" name="sexe" id="f" value="f">
+            <label for="f" >femme</label><br>
+            <label for="" >logement:</label>   
+            <input type="radio" name="lo" id=""  checked>
+            <label for="" >en tunisie</label>  
+            <input type="radio" name="lo" id="">
+            <label for="" >a letranger</label><br>
+            <label for="de" class="col">date de maissanse</label>
+            <input type="date" name="date" id="de"><br>
+            <label for="" class="col" >code postal</label>
+            <input type="number" name="postal" id="de" min="1000" max="9999"><br>
+            <label for="" class="col">ville</label>
+            <select name="ville">
+                <option value="">selectionner une ville</option>
+                <option value="1">tunis</option>
+                <option value="2">sousse</option>
+                <option value="3"  selected>sfax</option>
+                <option value="4">gabe</option>
+            </select><br>
+            <label for="">type de carte:</label> 
+            <label for="">visa</label>    
+            <input type="checkbox" name="c1" id="" value="type">
+            <label for="">mastercart</label>
+            <input type="checkbox" name="c2" id="" value="type"><br>
+            <label for="">vos remarque:</label><br>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            
+           </fieldset>
+           <input class="batoun" type="submit" value="envoyer">
+           <input  class="batoun" type="reset" value="annuler">
+    </form>
+</body>
+</html>
